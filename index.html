@@ -76,7 +76,16 @@ section:after {
     display: table;
     clear: both;
     }
-    
+
+section.row {    
+    display: flex;
+    }
+article.col {
+    flex: 1;
+    }
+nav.col {
+    flex: 1;
+    }    
 /*Body Setting*/
 body {
     margin: 0;
@@ -173,19 +182,17 @@ footer {
         <div class="PictureFace"><img class="PictureFace" src="https://github.com/Haweast/Home/blob/gh-pages/Pictures/StefanFace2.png?raw=true" alt="Stefan Photo" align="middle"></div>
     </header>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="http://haweast.ga/">Home</a></li>
-      <li><a href="http://education.haweast.ga/">Education</a></li>
-      <li><a class="active" href="http://workexp.haweast.ga/">Work Experience</a></li>
-      <li><a href="http://contact.haweast.ga/">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-      <div class="body">
-      <bodytext>
+<section class="row">
+    <nav class="col">
+        <ul>
+        <li><a href="http://haweast.ga/">Home</a></li>
+        <li><a href="http://education.haweast.ga/">Education</a></li>
+        <li><a class="active" href="http://workexp.haweast.ga/">Work Experience</a></li>
+        <li><a href="http://contact.haweast.ga/">Contact</a></li>
+        </ul>
+    </nav>
+    <article class="col">
+    <bodytext>
           
           <h1><font size="6"><u>Work Experience</u></font></h1>
             <br>
