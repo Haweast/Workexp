@@ -1,61 +1,51 @@
 <html lang="en">
 <head>
-<title>Stefan Hawea - Work Experience</title>
-    <meta charset="utf-8">
-    <meta name="Stefan's Online CV - Work Experience" content="width=device-width, initial-scale=1">
+    <title>Stefan Hawea - Online CV (Work Experience)</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Stefan Hawea online CV">
+    <meta name="keywords" content="Stefan,Hawea,Stefan Hawea, Haweast.ga,Haweast">
+    <meta name="author" content="Stefan Hawea">
 </head>
     
 <style>
-    {
-    box-sizing: border-box;
-    }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    }
-/* Style the header */
-header_left {
+/*Header Setting*/
+header {
     background-color: #6E8898;
     padding: 0px;
     text-align: right;
-    font-size: 35px;
-    color: black;
-    overflow: auto;
-    position: left;
-    width: 50%;
-    float: left;
-    height: 45%;
-    }
-header_right {
-    background-color: #6E8898;
-    padding: 0px;
-    text-align: left;
-    font-size: 35px;
-    color: black;
-    overflow: auto;
-    position: right;
-    width: 50%;
-    float: right;
-    height: 45%;
-    }
-p.Header {
-    margin: 70px 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 210px;
+    float: center;
+    overflow: hidden;
     }
     
-img.StefanFace {
+img.PictureFace{
     position: relative;
-    top: 10px;
-    left: 20px;
-    padding: 0px;
-    margin: 30px;
+    top: 15px;
+    right: -40px;
     }
     
+div.PictureFace {
+    display: table-cell;
+    width: 50%;
+    position: left;
+    }
+    
+div.middle {
+    display: table-cell;
+    width:77%;
+    position: center;
+    }
+    
+/*Nav Setting*/    
 nav {
     list-style-type: none;
     padding: 0;
     width: 25%;
     position: right;
-    height: 100%;
-    overflow: auto;
+    height: 801px;
+    overflow: hidden;
     float: right;
     background-color: #3C4F76;
     }
@@ -79,14 +69,31 @@ li a:hover:not(.active) {
     background-color: #9FB1BC;
     color: white;
     }
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+/*Body Setting*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
     
 article {
     float: left;
     padding: 0px;
     background-color: #9FB1BC;
     overflow: auto;
-    height: 100%;
+    height: auto;
     width: 75%;
+    overflow: auto;
+    }
+    
+div.body {
+    padding: 2px;
+    height: 100%;
     }
     
 bodytext {
@@ -94,29 +101,30 @@ bodytext {
     padding-left: 20px;
     }
     
-/* Clear floats after the columns */
-section:after {
-    content: "";
-    display: table;
-    clear: both;
+hr {
+    width: 98%;
+    margin: 0.1px;
     }
-/* Style the footer */
+    
+/*Footer Setting*/
 footer {
     background-color: #6E8898;
     padding: 10px;
     text-align: center;
     color: white;
     overflow: auto;
-    }
+    }       
 </style>
     
 <body>
-    <header_right>
-        <img class="StefanFace" src="https://github.com/Haweast/Home/blob/gh-pages/Pictures/StefanFace2.png?raw=true" alt="Stefan Photo" align="middle"> 
-    </header_right>
-    <header_left>
-        <p class="Header"><font color="#D3D0CB" size="40">Work<br><strong>Experience</strong></font></p>
-    </header_left>
+    <header>
+        <div class="middle">
+            <div><font size="12">Hi, I'm</font></div>
+            <div><font color="#D3D0CB" size="40"><strong> Stefan Hawea</strong></font></div>
+            <div><font size="4"><i>and this is my online CV</i></font></div>
+        </div>
+        <div class="PictureFace"><img class="PictureFace" src="https://github.com/Haweast/Home/blob/gh-pages/Pictures/StefanFace2.png?raw=true" alt="Stefan Photo" align="middle"></div>
+    </header>
 
 <section>
   <nav>
@@ -129,14 +137,15 @@ footer {
   </nav>
   
   <article>
+      <div class="body">
       <bodytext>
       <h3><u><strong>Data Analysis</u></strong><font size="2.5"><br>NZ Care Disability | 02/2018 – Current</font></h3>
-    <p>
-    I create weekly reports for the recruitment side of NZ Care Disability, this involves pulling data out of the database and<br> 
-    presenting it in a clear and easy to understand format. I’ve also created a new template 
-    for the team to use that automatically pulls the information they want from the database and create an individual campaigns report that I end up using to creating the weekly reports.
-    </p>  
+    <p>I create weekly reports for the recruitment side of NZ Care Disability, this involves pulling data out of the database and presenting it in a clear and easy to understand format. I’ve also created a new template for the team to use that automatically pulls the information they want from the database and create an individual campaigns report that I end up using to creating the weekly reports.</p>
+        <hr noshade></hr>
+        <h3><u><strong>Data Analysis</u></strong><font size="2.5"><br>NZ Care Disability | 02/2018 – Current</font></h3>
+      <p>I create weekly reports for the recruitment side of NZ Care Disability, this involves pulling data out of the database and presenting it in a clear and easy to understand format. I’ve also created a new template for the team to use that automatically pulls the information they want from the database and create an individual campaigns report that I end up using to creating the weekly reports.</p>
       </bodytext>
+      </div>
   </article>
 </section>
 
